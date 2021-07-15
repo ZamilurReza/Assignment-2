@@ -1,0 +1,137 @@
+/* General */
+body{
+    overflow-x: hidden;
+    background-color: rgba(222, 184, 135, 0.26);
+    font-family: 'Poppins', sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+
+}
+/* header section*/
+header{
+    width: 100%;
+    background-color: #2D25A0;
+}
+
+/* sectio1 open*/
+.section-1{
+    display: flex;
+    justify-content: space-between;
+
+}
+.section-1-1{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'poppins', sans-serif;;
+}
+.button{
+    color: white;
+    padding:10px 24px ;
+    font-size: 22px;
+    background-color:#E02C6D ;
+}
+/*section1 close */
+/*section2 open */
+header .section-2 img{
+    max-width: 290px;
+    max-height: 270px;
+
+}
+.section-2:hover img{
+    position: relative;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 1.5s;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.24);
+    background-color: rgb(96, 96, 201);
+    border-radius: 70px;
+}
+/* section2 close */
+
+/* close headre section */
+
+/* main */
+/* portion1 */
+main section{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    width: 100%;
+    grid-gap: 30px;
+}
+.bio img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+.bio{
+    background-color: rgb(219, 207, 207);
+    padding: 15px;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.24);
+    border-radius: 7px;
+}
+.bio-h>h2{
+    font-size: 20px ;
+    font-weight: 700;  
+    color: #18191F; 
+}
+.bio-h p{
+    font-size: 10px;
+    text-align: justify;
+}
+/* portion1 close */
+
+/* portion2 start */
+section{
+    display: flex;
+    justify-content: space-between;
+    
+}
+section img{
+    width: 100%;
+}
+
+/* portion2 close */
+
+/* footer area start*/
+footer{
+    width: 240px;
+    margin-top: 50px;
+    margin: 0 auto; 
+}
+footer img{
+    width: 100%;
+    
+}
+i{
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: 20px;  
+}.copyright{
+    margin-left: 18px;
+}
+/* footer end  */
+
+/* media queruy mobile */
+
+@media only screen and(max-width:680px) {
+    body{
+        position: relative;
+        width: 100%;
+        overflow-x: hidden;
+        height: auto;
+    }
+    header,main{
+        max-width: 100%;
+    }
+    img{
+        max-width: 100%;
+    }
+    header.section-1{
+        flex-direction: column;
+        justify-content: center;
+    }
+    main{
+        grid-template-columns: 1fr;
+    }
+}
